@@ -67,26 +67,26 @@
 }
 
 .btn.btn-primary {
-    background: var(--bs-primary) !important;
-    color: var(--bs-white) !important;
+    background: #def4fc !important;
+    color: #0470b6 !important;
     font-weight: 400;
     transition: 0.5s;
 }
 
 .btn.btn-primary:hover {
-    background: var(--bs-white) !important;
-    color: var(--bs-primary) !important;
+    background: #0470b6 !important;
+    color: #def4fc !important;
 }
 
 .btn.btn-light {
     background: var(--bs-light) !important;
-    color: var(--bs-primary) !important;
+    color: #0470b6 !important;
     font-weight: 400;
     transition: 0.5s;
 }
 
 .btn.btn-light:hover {
-    background: var(--bs-primary) !important;
+    background: #0470b6 !important;
     color: var(--bs-light) !important;
 }
 
@@ -132,7 +132,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary) !important;
+    color: #0470b6 !important;
 }
 
 .navbar-light .navbar-brand img {
@@ -168,7 +168,7 @@
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--bs-primary);
+    background: #0470b6;
     color: var(--bs-white);
 }
 
@@ -218,8 +218,8 @@
 
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
-        border: 1px solid var(--bs-primary);
-        color: var(--bs-primary);
+        border: 1px solid #0470b6;
+        color: #0470b6;
     }
 
     .navbar-light .navbar-collapse {
@@ -253,7 +253,7 @@
         background: transparent !important;
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: var(--bs-light) !important;
@@ -265,7 +265,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
+    background: linear-gradient(rgb(0 116 188 / 24%), rgb(151 219 248 / 26%));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,7 +282,7 @@
     width: 600px;
     height: 600px;
     border-radius: 300px;
-    border: 80px solid rgba(247, 71, 128, 0.05);
+    border: 80px solid rgb(55 181 232 / 8%);
     background: transparent;
     animation: RotateMoveSingle 5s linear infinite;
     z-index: -1;
@@ -318,7 +318,7 @@
     width: 600px;
     height: 600px;
     border-radius: 300px;
-    border: 80px solid rgba(247, 71, 128, 0.04);
+    border: 80px solid rgb(55 181 232 / 8%);
     background: transparent;
     animation: RotateMoveSingle 5s linear infinite;
     z-index: -1;
@@ -365,10 +365,10 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(102, 16, 242, 0.07);
+    background: rgb(0 116 188 / 23%);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
+
 }
 
 .breadcrumb-animation li:nth-child(1) {
@@ -493,7 +493,7 @@
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    border: 30px solid rgba(247, 71, 128, 0.05);
+    border: 30px solid rgb(123 211 247 / 10%);
     background: transparent;
     animation: RotateMoveHeader 5s linear infinite;
     z-index: -1;
@@ -534,7 +534,7 @@
     animation: RotateMoveSty-3 45s linear infinite;
     transition: 0.5s;
     z-index: -1;
-    
+
 }
 
 @keyframes RotateMoveSty-3 {
@@ -555,12 +555,12 @@
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    border: 30px solid rgba(102, 16, 242, 0.05);
+    border: 30px solid rgb(0 116 188 / 24%);
     background: transparent;
     animation: RotateMoveSty-4 45s linear infinite;
     transition: 0.5s;
     z-index: -1;
-    
+
 }
 
 @keyframes RotateMoveSty-4 {
@@ -587,7 +587,7 @@
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    border: 5px solid rgba(247, 71, 128, 0.1);
+    border: 5px solid rgb(150 218 248 / 55%);
     background: transparent;
     animation: RotateMoveSty-2 45s linear infinite;
     transition: 0.5s;
@@ -620,13 +620,13 @@
 @media (max-width: 992px) {
     .hero-header {
         padding-top: 280px;
-        
+
     }
 
     .hero-header .rotate-img img {
         margin-top: 100px;
     }
-   
+
 }
 /*** Hero Header End ***/
 
@@ -643,7 +643,7 @@
 }
 
 .service .service-item:hover {
-    background: rgba(102, 16, 242, 0.09);
+    background: rgb(55 181 232 / 25%);
     border: 1px ;
 }
 
@@ -654,7 +654,7 @@
 }
 
 .service .service-item:hover a:hover {
-    background: var(--bs-primary) !important;
+    background: #0470b6 !important;
     color: var(--bs-white);
 }
 
@@ -687,7 +687,7 @@
     height: 110px;
     top: -45px;
     right: -80px;
-    background: var(--bs-primary) !important;
+    background: #0470b6 !important;
     color: var(--bs-white);
     transform: rotate(42deg);
     display: flex;
@@ -815,7 +815,7 @@
     align-items: center;
     justify-content: center;
     background: rgba(102, 16, 242, 0.09);
-    color: var(--bs-primary);
+    color: #0470b6;
     transition: 0.5s;
 }
 
@@ -831,14 +831,14 @@
     align-items: center;
     justify-content: center;
     background: rgba(102, 16, 242, 0.09);
-    color: var(--bs-primary);
+    color: #0470b6;
     transition: 0.5s;
 }
 
 
 .testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--bs-primary);
+    background: #0470b6;
     color: var(--bs-white) !important;
 }
 
@@ -907,7 +907,7 @@
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    border: 60px solid rgba(102, 16, 242, 0.05);
+    border: 60px solid rgb(2 133 200 / 23%);
     background: transparent;
     animation: ContactMoveLeft 50s linear infinite;
     z-index: 1;
@@ -929,7 +929,7 @@
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    border: 60px solid rgba(102, 16, 242, 0.05);
+    border: 60px solid rgb(2 133 200 / 23%);
     background: transparent;
     animation: ContactMoveRight 50s linear infinite;
     z-index: 1;
@@ -947,24 +947,24 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
+    background: linear-gradient(rgb(131 213 248 / 32%), rgb(29 177 231 / 13%));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .footer .footer-item a {
-    line-height: 35px;
+    line-height: 25px;
     color: var(--bs-dark);
     transition: 0.5s;
 }
 
 .footer .footer-item p {
-    line-height: 35px;
+    line-height: 25px;
 }
 
 .footer .footer-item a:hover {
     letter-spacing: 2px;
-    color: var(--bs-primary);
+    color: #0470b6;
 }
 
 /*** Footer End ***/
@@ -972,6 +972,6 @@
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark) !important;
+    background: #0277be !important;
 }
 /*** copyright end ***/

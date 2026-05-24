@@ -43,24 +43,24 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
-                    <h1 class="display-6 text-primary m-0"><i class="fas fa-envelope me-3"></i>Mailler</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+
+                <!-- Updated Logo Section -->
+                <a href="{{ route('home') }}" class="navbar-brand p-0">
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" style="max-height: 115px; width: auto;">
                 </a>
+                <!-- End Logo Section -->
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-                            <a href="{{ route('web-about') }}" class="nav-item nav-link">About</a>
-                            <a href="{{ route('web-service') }}" class="nav-item nav-link">Services</a>
-                        </div>
-                        <a href="{{ route('web-contact') }}" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Get in touch</a>
-                        {{-- <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a> --}}
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                        <a href="{{ route('web-about') }}" class="nav-item nav-link">About</a>
+                        <a href="{{ route('web-service') }}" class="nav-item nav-link">Services</a>
                     </div>
+                    <a href="{{ route('web-contact') }}" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Get In Touch</a>
                 </div>
             </nav>
         </div>
@@ -211,25 +211,34 @@
         <!-- Contact End -->
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
+         <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-3">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-dark mb-4">Company</h4>
-                            <a href=""> Why Dreamclone?</a>
-                            <p>
+                            {{-- <h4 class="text-dark mb-4"></h4> --}}
+                            <img src="assets/img/logo-footer.png" alt="">
+                            {{-- <a href=""> Why Dreamclone?</a> --}}
+                            <p style="line-height: 20px; font-size: 14px;">
                                 Scale your business with Dreamclone. We build custom Advanced solutions, high-performance web systems, and seamless AI-driven workflow automation.
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-2">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-dark">Quick Links</h4>
+                            <h4 class="mb-4 text-dark">Company</h4>
                             <a href="{{ route('web-about') }}"> About Us</a>
                             <a href="{{ route('web-service') }}"> Service</a>
                             <a href="{{ route('web-contact') }}"> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Quick Links</h4>
+                            <a href="javascript:void(0);"> Career</a>
+                            <a href="javascript:void(0);"> Terms & Condition</a>
+                            <a href="javascript:void(0);"> Contact Us</a>
                         </div>
                     </div>
                     {{-- <div class="col-md-6 col-lg-6 col-xl-3">
@@ -242,7 +251,7 @@
                             <a href=""> Retention Emails</a>
                         </div>
                     </div> --}}
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-dark">Contact Info</h4>
                             <a href=""><i class="fa fa-map-marker-alt me-2"></i> Sundaram Icon, Vaikunth crossing, Waghodia road, Vadodara, 390019</a>
@@ -250,10 +259,10 @@
                             <a href=""><i class="fas fa-phone me-2"></i> +91 7383181131</a>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-secondary me-2"></i>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -264,109 +273,18 @@
 
 
         <!-- Copyright Start -->
-        <div class="container-fluid contact py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
-                    <h4 class="text-primary mb-4">Contact Us</h4>
-                    <h1 class="display-5 mb-4">Let's Build Something Exceptional Together</h1>
-                    <p class="mb-0">
-                        Have an innovative project in mind or need to automate complex business workflows? Get in touch with our engineering team today. Whether you are looking for enterprise-grade Advance architectures, secure API integrations, or intelligent system design, we are here to turn your technical vision into highly scalable reality.
-                    </p>
-                </div>
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <h2 class="display-5 mb-2">Connect With Our Technical Team</h2>
-                        <p class="mb-4">
-                            Fill out the form below to initiate your inquiry. Our developers will review your requirements and follow up with a technical consultation within one business day.
-                        </p>
-
-                        <form action="{{ route('contact.submit') }}" method="POST" id="contactForm">
-                            @csrf
-                            <div class="row g-3">
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
-                                        <label for="phone">Your Phone</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Describe your project" id="description" name="description" style="height: 160px" required></textarea>
-                                        <label for="description">Project Details & Requirements</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white">
+                            Copyright © {{ date("Y") }} <a href="#"> Dreamclone </a>, All right reserved.</span>
                     </div>
-
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-light d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;">
-                                <i class="fa fa-map-marker-alt fa-2x text-primary"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h4>Our Office Location</h4>
-                                <p class="mb-0">Sundaram Icon, Vaikunth crossing, Waghodia road, Vadodara, 390019</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-light d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;">
-                                <i class="fa fa-phone-alt fa-2x text-primary"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h4>Call Us Direct</h4>
-                                <a href="tel:+917383181131" class="mb-0 h5 text-decoration-none text-dark fw-bold">+91 7383181131</a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-light d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;">
-                                <i class="fa fa-envelope-open fa-2x text-primary"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h4>Email Us For Inquiries</h4>
-                                <a class="mb-0 h5 text-decoration-none text-primary" href="mailto:hello@dreamclone.in">hello@dreamclone.in</a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="me-4">
-                                <div class="bg-light d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; border-radius: 50px;">
-                                    <i class="fas fa-share fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="rounded h-100">
-                            <iframe class="rounded w-100" style="height: 500px;" src="https://maps.google.com/maps?q=Sundaram%20Icon,%20Vaikunth%20crossing,%20Waghodia%20road,%20Vadodara&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed with <span class="text-danger"> <i class="fas fa-heart"></i> </span> By <a class="" href="https://dreamclone.in">Dreamclone</a>
                     </div>
                 </div>
             </div>
