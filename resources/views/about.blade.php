@@ -43,26 +43,24 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
-                    <h1 class="display-6 text-primary m-0"><i class="fas fa-envelope me-3"></i>Mailler</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+
+                <!-- Updated Logo Section -->
+                <a href="{{ route('home') }}" class="navbar-brand p-0">
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" style="max-height: 115px; width: auto;">
                 </a>
+                <!-- End Logo Section -->
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-                            <a href="{{ route('web-about') }}" class="nav-item nav-link">About</a>
-                            <a href="{{ route('web-service') }}" class="nav-item nav-link">Services</a>
-                        </div>
-                        <a href="{{ route('web-contact') }}" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Get in touch</a>
-                        {{-- <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a> --}}
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                        <a href="{{ route('web-about') }}" class="nav-item nav-link">About</a>
+                        <a href="{{ route('web-service') }}" class="nav-item nav-link">Services</a>
                     </div>
-                    {{-- <a href="#" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Log In</a>
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a> --}}
+                    <a href="{{ route('web-contact') }}" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Get In Touch</a>
                 </div>
             </nav>
         </div>
@@ -116,7 +114,7 @@
         <!-- About End -->
 
         <!-- FAQ Start -->
-        <div class="container-fluid FAQ bg-light overflow-hidden mb-5">
+        <div class="container-fluid FAQ bg-light overflow-hidden">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
 
@@ -131,14 +129,15 @@
                                 <div class="accordion-item border-0 mb-4 shadow-sm rounded">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button rounded-top fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Our business runs on spreadsheets. Can you digitize our entire workflow?
+                                            What specific services do you provide?
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body my-2">
-                                            <h5 class="text-primary">Yes, this is our core expertise.</h5>
-                                            <p class="mb-2">We specialize in transforming manual, error-prone processes into seamless digital ecosystems. Whether it is inventory tracking, order management, or distributor relations, we build custom admin panels that automate your specific business logic.</p>
-                                            <p class="mb-0">By moving you away from fragmented spreadsheets, we eliminate human error, secure your data, and save your team hundreds of hours in operational time.</p>
+                                            {{-- <h5 class="text-primary">Yes, this is our core expertise.</h5> --}}
+                                            <p class="mb-0">
+                                                We specialize in custom software development, scalable backend architectures, and native AI integrations to build intelligent, high-performance applications.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -147,30 +146,48 @@
                                 <div class="accordion-item border-0 mb-4 shadow-sm rounded">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed rounded-top fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            If my user base scales rapidly, will the custom software handle the load?
+                                            How do you ensure the software is secure?
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body my-2">
-                                            <h5 class="text-primary">Built to scale from day one.</h5>
-                                            <p class="mb-2">Absolutely. Because we build exclusively with the Laravel full-stack framework and robust database structures (like MySQL and Redis), your software is engineered for high performance.</p>
-                                            <p class="mb-0">Whether you are a SaaS startup onboarding your first 100 users or an enterprise managing 10,000 franchisees, our architectural blueprints ensure your platform remains stable, secure, and blazingly fast as you grow.</p>
+                                            {{-- <h5 class="text-primary">Built to scale from day one.</h5> --}}
+                                            {{-- <p class="mb-2">Absolutely. Because we build exclusively with the Laravel full-stack framework and robust database structures (like MySQL and Redis), your software is engineered for high performance.</p> --}}
+                                            <p class="mb-0">We prioritize security at the server level by utilizing strict middleware logic, proper SSL configuration, encrypted internal identity setups, and secure document handling like invisible watermarking.</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- FAQ Item 3 -->
-                                <div class="accordion-item border-0 shadow-sm rounded">
+                                <div class="accordion-item border-0 mb-4 shadow-sm rounded">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed rounded-top fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            How transparent is your pricing, and do we own the source code?
+                                            Do you offer post-launch support?
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body my-2">
-                                            <h5 class="text-primary">Zero hidden fees and full intellectual property rights.</h5>
-                                            <p class="mb-2">We believe in 100% transparency. Before writing a single line of code, we provide a detailed roadmap with clear, milestone-based pricing. There are no surprise charges mid-project.</p>
-                                            <p class="mb-0">Furthermore, once the project is completed and final payments are settled, you retain full ownership of the intellectual property and the complete source code. It is your business; it should be your software.</p>
+                                            {{-- <h5 class="text-primary">Zero hidden fees and full intellectual property rights.</h5> --}}
+                                            {{-- <p class="mb-2">We believe in 100% transparency. Before writing a single line of code, we provide a detailed roadmap with clear, milestone-based pricing. There are no surprise charges mid-project.</p> --}}
+                                            <p class="mb-0">Yes. We provide comprehensive maintenance packages that include server monitoring, framework upgrades, security patches, and ongoing feature development.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- FAQ Item 4 -->
+                                <div class="accordion-item border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed rounded-top fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Who owns the source code once the project is finished?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body my-2">
+                                            {{-- <h5 class="text-primary">Zero hidden fees and full intellectual property rights.</h5> --}}
+                                            {{-- <p class="mb-2">We believe in 100% transparency. Before writing a single line of code, we provide a detailed roadmap with clear, milestone-based pricing. There are no surprise charges mid-project.</p> --}}
+                                            <p class="mb-0">
+                                                Upon final payment, the client retains 100% intellectual property rights and full ownership of the source code and deployment environments.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -189,27 +206,34 @@
         </div>
         <!-- FAQ End -->
 
-
-
         <!-- Footer Start -->
-        <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-3">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-dark mb-4">Company</h4>
-                            <a href=""> Why Dreamclone?</a>
-                            <p>
+                            {{-- <h4 class="text-dark mb-4"></h4> --}}
+                            <img src="assets/img/logo-footer.png" alt="">
+                            {{-- <a href=""> Why Dreamclone?</a> --}}
+                            <p style="line-height: 20px; font-size: 14px;">
                                 Scale your business with Dreamclone. We build custom Advanced solutions, high-performance web systems, and seamless AI-driven workflow automation.
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-2">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-dark">Quick Links</h4>
+                            <h4 class="mb-4 text-dark">Company</h4>
                             <a href="{{ route('web-about') }}"> About Us</a>
                             <a href="{{ route('web-service') }}"> Service</a>
                             <a href="{{ route('web-contact') }}"> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Quick Links</h4>
+                            <a href="javascript:void(0);"> Career</a>
+                            <a href="javascript:void(0);"> Terms & Condition</a>
+                            <a href="javascript:void(0);"> Contact Us</a>
                         </div>
                     </div>
                     {{-- <div class="col-md-6 col-lg-6 col-xl-3">
@@ -222,7 +246,7 @@
                             <a href=""> Retention Emails</a>
                         </div>
                     </div> --}}
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-dark">Contact Info</h4>
                             <a href=""><i class="fa fa-map-marker-alt me-2"></i> Sundaram Icon, Vaikunth crossing, Waghodia road, Vadodara, 390019</a>
@@ -248,13 +272,14 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Dreamclone</a>, All right reserved.</span>
+                        <span class="text-white">
+                            Copyright © {{ date("Y") }} <a href="#"> Dreamclone </a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed with <i class="fas fa-heart"></i> By <a class="border-bottom" href="https://dreamclone.in">Dreamclone</a>
+                        Designed with <span class="text-danger"> <i class="fas fa-heart"></i> </span> By <a class="" href="https://dreamclone.in">Dreamclone</a>
                     </div>
                 </div>
             </div>

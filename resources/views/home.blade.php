@@ -240,7 +240,7 @@
                 <div class="row g-4 justify-content-center text-center mb-5">
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="text-center p-4">
-                            <div class="d-inline-block rounded bg-light p-4 mb-4">
+                            <div class="d-inline-block rounded bg-light p-3 mb-4">
                                 <i class="fas fa-bolt fa-5x text-secondary"></i>
                             </div>
                             <div class="feature-content">
@@ -253,7 +253,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="text-center p-4">
-                            <div class="d-inline-block rounded bg-light p-4 mb-4">
+                            <div class="d-inline-block rounded bg-light p-3 mb-4">
                                 <i class="fas fa-user-shield fa-5x text-secondary"></i>
                             </div>
                             <div class="feature-content">
@@ -265,7 +265,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="text-center rounded p-4">
-                            <div class="d-inline-block rounded bg-light p-4 mb-4">
+                            <div class="d-inline-block rounded bg-light p-3 mb-4">
                                 <i class="fas fa-robot fa-5x text-secondary"></i>
                             </div>
                             <div class="feature-content">
@@ -277,7 +277,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="text-center rounded p-4">
-                            <div class="d-inline-block rounded bg-light p-4 mb-4">
+                            <div class="d-inline-block rounded bg-light p-3 mb-4">
                                 <i class="fas fa-chart-line fa-5x text-secondary"></i>
                             </div>
                             <div class="feature-content">
