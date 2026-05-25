@@ -31,6 +31,7 @@
         <meta name="twitter:image" content="{{ $image }}">
         <meta name="theme-color" content="#ffffff">
 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="icon" type="image/x-icon" href="assets/img/favicon/logo-16x16.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/logo-16x16.png">
 
