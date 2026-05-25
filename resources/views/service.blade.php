@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
+        @props([
+            'title' => 'Custom CRM & SaaS Development Agency | Dreamclone',
+            'description' => 'Dreamclone delivers high-velocity, scalable digital architecture including custom CRM systems, dynamic SaaS products, and automated enterprise applications.',
+            'url' => url()->current(),
+            'image' => asset('assets/img/logo.png'),
+            'type' => 'website'
+        ])
         <meta charset="utf-8">
-        <title>Mailler - SaaS Website Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <title>@yield('title', $title)</title>
+        <meta name="description" content="{{ $description }}">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
+        <!-- Open Graph / LinkedIn / Facebook -->
+        <meta property="og:type" content="{{ $type }}">
+        <meta property="og:url" content="{{ $url }}">
+        <meta property="og:title" content="{{ $title }}">
+        <meta property="og:description" content="{{ $description }}">
+        <meta property="og:image" content="{{ $image }}">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="{{ $url }}">
+        <meta name="twitter:title" content="{{ $title }}">
+        <meta name="twitter:description" content="{{ $description }}">
+        <meta name="twitter:image" content="{{ $image }}">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon/logo-32x32.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/logo-32x32.png">
+        {{-- <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon/logo-16x16.png') }}"> --}}
+
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="Dreamclone">
+
+        <link rel="canonical" href="{{ $url }}">
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

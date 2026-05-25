@@ -11,7 +11,8 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // Append your custom canonical SEO middleware globally
+        $middleware->append(\App\Http\Middleware\EnforceCanonicalDomain::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
