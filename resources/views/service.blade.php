@@ -9,6 +9,9 @@
             'type' => 'website'
         ])
         <meta charset="utf-8">
+        <meta name="keywords" content="dreamclone, Dreamclone, software, softwarebrand, Laravel, Custom CRM, Saas, Ecommerce Software development">
+        <meta name="author" content="Dreamclone">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@yield('title', $title)</title>
         <meta name="description" content="{{ $description }}">
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
