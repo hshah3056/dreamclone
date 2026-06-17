@@ -407,14 +407,23 @@
                                 </div>
                             </a>
 
-                            <div class="d-flex align-items-center border border-light border-opacity-25 rounded-pill px-4 py-3" style="background: rgba(255,255,255,0.05); max-width: 400px;">
-                                <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm flex-shrink-0" style="width: 50px; height: 50px;">
-                                    <i class="fas fa-envelope-open-text fa-lg"></i>
+                            <div class="d-flex align-items-center border border-light border-opacity-25 rounded-pill px-3 px-md-4 py-2 py-md-3 w-100" style="background: rgba(255,255,255,0.05); max-width: 400px;">
+
+                                <!-- Icon Container: Scaled down slightly on mobile -->
+                                <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-2 me-md-3 shadow-sm flex-shrink-0" style="width: 45px; height: 45px;">
+                                    <i class="fas fa-envelope-open-text"></i>
                                 </div>
-                                <div class="text-start">
-                                    <span class="d-block text-white" style="font-size: 0.85rem; opacity: 0.8;">Email Us For Details</span>
-                                    <a href="mailto:dreamclone2501@gmail.com" class="h5 mb-0 text-white text-decoration-none">dreamclone2501@gmail.com</a>
+
+                                <!-- Text Container: Added overflow hidden for truncation -->
+                                <div class="text-start overflow-hidden w-100">
+                                    <span class="d-block text-white mb-1" style="font-size: 0.75rem; opacity: 0.8;">Email Us For Details</span>
+
+                                    <!-- Email Link: Added text-truncate to prevent layout breaks on small screens -->
+                                    <a href="mailto:dreamclone2501@gmail.com" class="d-block fs-6 fw-bold text-white text-decoration-none text-truncate" title="dreamclone2501@gmail.com">
+                                        dreamclone2501@gmail.com
+                                    </a>
                                 </div>
+
                             </div>
 
                         </div>

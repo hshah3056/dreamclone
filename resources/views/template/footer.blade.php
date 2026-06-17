@@ -24,8 +24,8 @@
                     <div class="col-md-6 col-lg-6 col-xl-2">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-dark">Quick Links</h4>
-                            <a href="javascript:void(0);"> Career</a>
-                            <a href="javascript:void(0);"> Terms & Condition</a>
+                            <a href="/"> Career</a>
+                            <a href="/"> Terms & Condition</a>
                         </div>
                     </div>
                     {{-- <div class="col-md-6 col-lg-6 col-xl-3">
@@ -65,7 +65,7 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
                         <span class="text-white">
-                            Copyright © {{ date("Y") }} <a href="#"> Dreamclone </a>, All right reserved.</span>
+                            Copyright © {{ date("Y") }} <a href="/"> Dreamclone </a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
@@ -80,4 +80,4 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+        <a href="javascript:void(0);" class="btn btn-primary btn-lg-square back-to-top" aria-label="back-to-top"><i class="fa fa-arrow-up"></i></a>
