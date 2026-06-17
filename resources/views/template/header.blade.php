@@ -5,7 +5,7 @@
 
                 <!-- Updated Logo Section -->
                 <a href="{{ route('home') }}" class="navbar-brand p-0">
-                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" style="max-height: 115px; width: auto;">
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" title="Dreamclone" style="max-height: 115px; width: auto;">
                 </a>
                 <!-- End Logo Section -->
 
@@ -26,7 +26,7 @@
             <!-- Hero Header Start -->
             <div class="hero-header overflow-hidden px-5">
                 <div class="rotate-img">
-                    <img src="assets/img/sty-1.png" class="img-fluid w-100" alt="">
+                    <img src="assets/img/sty-1.png" class="img-fluid w-100" alt="dreamclone" title="Dreamclone">
                     <div class="rotate-sty-2"></div>
                 </div>
                 <div class="row gy-5 align-items-center">
@@ -36,7 +36,7 @@
                         <a href="#" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Started</a>
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="assets/img/hero-img-1.png" class="img-fluid w-100 h-100" alt="">
+                        <img src="assets/img/hero-img-1.png" class="img-fluid w-100 h-100" alt="dreamclone" title="Dreamclone">
                     </div>
                 </div>
             </div>

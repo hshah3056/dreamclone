@@ -27,7 +27,10 @@
                             </p>
                             <div style="background-color: #f8fafc; border-left: 4px solid #38bdf8; padding: 15px 20px; margin: 25px 0; border-radius: 0 8px 8px 0;">
                                 <p style="margin:0; color: #1e293b; font-size: 14px; font-weight: 600;">Need immediate assistance?</p>
-                                <p style="margin:5px 0 0 0; color: #475569; font-size: 13px; line-height: 1.5;">You can always reach our team directly at <a href="tel:+917383181131" style="color:#2563eb; text-decoration:none; font-weight:600;">+91 7383181131</a> for any urgent matters.</p>
+                                <p style="margin:5px 0 0 0; color: #475569; font-size: 13px; line-height: 1.5;">You can always reach our team directly at
+                                    <a href="tel:+918160945573" style="color:#2563eb; text-decoration:none; font-weight:600;">+91 8160945573</a>
+                                    for any urgent matters.
+                                </p>
                             </div>
                             <p style="color: #475569; font-size: 15px; line-height: 1.6; margin-top: 30px; margin-bottom: 0;">
                                 Best Regards,<br>

@@ -3,18 +3,19 @@
     <head>
         @props([
             'title' => 'Custom CRM & SaaS Development Agency | Dreamclone',
-            'description' => 'Dreamclone delivers high-velocity, scalable digital architecture including custom CRM systems, dynamic SaaS products, and automated enterprise applications.',
+            'description' => 'Dreamclone delivers high-velocity, scalable digital architecture including custom CRM systems, dynamic SaaS products applications.',
             'url' => url()->current(),
             'image' => asset('assets/img/logo.png'),
             'type' => 'website'
         ])
         <meta charset="utf-8">
-        <meta name="keywords" content="dreamclone, Dreamclone, software, softwarebrand, Laravel, Custom CRM, Saas, Ecommerce Software development">
+        <meta name="keywords" content="dream, dreamclone, software develop in india, software, softwarebrand, Laravel, Custom CRM, Saas, Ecommerce Software development">
         <meta name="author" content="Dreamclone">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@yield('title', $title)</title>
         <meta name="description" content="{{ $description }}">
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="publisher" content="https://www.dreamclone.com">
+        <meta name="robots" content="index, follow">
 
         <!-- Open Graph / LinkedIn / Facebook -->
         <meta property="og:type" content="{{ $type }}">
@@ -22,6 +23,7 @@
         <meta property="og:title" content="{{ $title }}">
         <meta property="og:description" content="{{ $description }}">
         <meta property="og:image" content="{{ $image }}">
+        <meta property="og:article:publisher" content="https://www.facebook.com/dreamclone">
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
@@ -58,6 +60,16 @@
         <link href="{{ asset('assets/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
+        <div itemscope itemtype="https://schema.org/Organization" style="display:none;">
+            <link itemprop="url" href="https://www.dreamclone.in">
+            <link itemprop="logo" href="{{ asset('assets/img/favicon/logo-180x180.png') }}">
+
+            <p>Maintained by <span itemprop="name">Dreamclone</span></p>
+
+            <a itemprop="sameAs" href="https://www.facebook.com/dreamclone" target="_blank">Facebook</a> |
+            <a itemprop="sameAs" href="https://www.linkedin.com/company/dreamclone" target="_blank">LinkedIn</a>
+        </div>
 
         @yield('styles')
     </head>

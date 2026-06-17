@@ -88,7 +88,7 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="RotateMoveLeft rounded">
                             <!-- Ensure you use a high-quality team or code-related image here -->
-                            <img src="assets/img/vission.png" class="img-fluid w-100 rounded" alt="Dreamclone Team">
+                            <img src="assets/img/vission.png" class="img-fluid w-100 rounded" alt="Dreamclone Team" title="Vision">
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@
                         </div>
 
                         <!-- Main Heading -->
-                        <h1 class="display-5 mb-4 fw-bold">Dream<span class="text-primary">clone</span></h1>
+                        <h6 class="display-5 mb-4 fw-bold">Dream<span class="text-primary">clone</span></h6>
 
                         <!-- Main Paragraph (Your Content) -->
                         <p class="mb-5 text-muted">
@@ -147,8 +147,8 @@
         <div class="container-fluid service py-2">
             <div class="container py-5">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
-                    <h4 class="mb-1 text-primary">Our Expertise</h4>
-                    <h1 class="display-5 mb-4">Reliable Solutions for Your Business</h1>
+                    <h5 class="mb-1 text-primary">Our Expertise</h5>
+                    <h2 class="display-5 mb-4">Reliable Solutions for Your Business</h2>
                     <p class="mb-0">
                         At Dreamclone, we don't just build websites; we build the engines that run your business. Using the Advance Full-Stack Framework, we specialize in creating custom tools that eliminate manual errors and scale with your growth.
                     </p>
@@ -231,8 +231,8 @@
         <div class="container-fluid feature overflow-hidden py-2">
             <div class="container py-5">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
-                    <h4 class="text-primary">Why Choose DreamClone? </h4>
-                    <h1 class="display-5 mb-4">Dream Big. Build Better.</h1>
+                    <h5 class="text-primary">Why Choose DreamClone? </h5>
+                    <h6 class="display-5 mb-4">Dream Big. Build Better.</h6>
                     <p class="mb-0">
                         Dreamclone empowers your business by transforming manual, fragmented processes into high-performance, automated Laravel ecosystems that are built to scale.
                     </p>
@@ -298,7 +298,7 @@
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="feature-img RotateMoveLeft h-100" style="object-fit: cover;">
 
-                            <img src="assets/img/service.png" class="img-fluid w-100 h-100" alt="">
+                            <img src="assets/img/service.png" class="img-fluid w-100 h-100" alt="Service" title="Service">
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
@@ -389,11 +389,11 @@
                                 </div>
                                 <div class="text-start">
                                     <span class="d-block text-white" style="font-size: 0.85rem; opacity: 0.8;">Call Us Anytime</span>
-                                    <a href="tel:+917383181131" class="h5 mb-0 text-white text-decoration-none">+91 73831 81131</a>
+                                    <a href="tel:+918160945573" class="h5 mb-0 text-white text-decoration-none">+91 8160945573</a>
                                 </div>
                             </div>
 
-                            <a href="https://api.whatsapp.com/send?phone=917383181131&text=Hi!%20I%20would%20like%20to%20get%20a%20professional%20quotation%20for%20my%20project.%20Could%20we%20discuss%20the%20details%20and%20pricing?"
+                            <a href="https://api.whatsapp.com/send?phone=918160945573&text=Hi!%20I%20would%20like%20to%20get%20a%20professional%20quotation%20for%20my%20project.%20Could%20we%20discuss%20the%20details%20and%20pricing?"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="d-flex align-items-center border border-light border-opacity-25 rounded-pill px-4 py-3 text-decoration-none quote-whatsapp-btn"
@@ -413,7 +413,7 @@
                                 </div>
                                 <div class="text-start">
                                     <span class="d-block text-white" style="font-size: 0.85rem; opacity: 0.8;">Email Us For Details</span>
-                                    <a href="mailto:hello@dreamclone.in" class="h5 mb-0 text-white text-decoration-none">hello@dreamclone.in</a>
+                                    <a href="mailto:dreamclone2501@gmail.com" class="h5 mb-0 text-white text-decoration-none">dreamclone2501@gmail.com</a>
                                 </div>
                             </div>
 

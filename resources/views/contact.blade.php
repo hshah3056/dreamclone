@@ -3,18 +3,19 @@
     <head>
         @props([
             'title' => 'Custom CRM & SaaS Development Agency | Dreamclone',
-            'description' => 'Dreamclone delivers high-velocity, scalable digital architecture including custom CRM systems, dynamic SaaS products, and automated enterprise applications.',
+            'description' => 'Dreamclone delivers high-velocity, scalable digital architecture including custom CRM systems, dynamic SaaS products applications.',
             'url' => url()->current(),
             'image' => asset('assets/img/logo.png'),
             'type' => 'website'
         ])
         <meta charset="utf-8">
-        <meta name="keywords" content="dreamclone, Dreamclone, software, softwarebrand, Laravel, Custom CRM, Saas, Ecommerce Software development">
+        <meta name="keywords" content="dream, dreamclone, software develop in india, software, softwarebrand, Laravel, Custom CRM, Saas, Ecommerce Software development">
         <meta name="author" content="Dreamclone">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@yield('title', $title)</title>
         <meta name="description" content="{{ $description }}">
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="publisher" content="https://www.dreamclone.com">
+        <meta name="robots" content="index, follow">
 
         <!-- Open Graph / LinkedIn / Facebook -->
         <meta property="og:type" content="{{ $type }}">
@@ -22,6 +23,7 @@
         <meta property="og:title" content="{{ $title }}">
         <meta property="og:description" content="{{ $description }}">
         <meta property="og:image" content="{{ $image }}">
+        <meta property="og:article:publisher" content="https://www.facebook.com/dreamclone">
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
@@ -32,7 +34,9 @@
         <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon/logo-16x16.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/logo-16x16.png">
+
         <link rel="icon" type="image/x-icon" href="assets/img/favicon/logo-32x32.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/logo-32x32.png">
 
@@ -50,17 +54,24 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
-        <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <!-- Libraries Stylesheet (Use asset() for Laravel paths) -->
+        <link href="{{ asset('assets/lib/animate/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
+        <div itemscope itemtype="https://schema.org/Organization" style="display:none;">
+            <link itemprop="url" href="https://www.dreamclone.in">
+            <link itemprop="logo" href="{{ asset('assets/img/favicon/logo-180x180.png') }}">
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+            <p>Maintained by <span itemprop="name">Dreamclone</span></p>
 
-        <!-- Template Stylesheet -->
-        <link href="assets/css/style.css" rel="stylesheet">
+            <a itemprop="sameAs" href="https://www.facebook.com/dreamclone" target="_blank">Facebook</a> |
+            <a itemprop="sameAs" href="https://www.linkedin.com/company/dreamclone" target="_blank">LinkedIn</a>
+        </div>
+
+        @yield('styles')
     </head>
 
     <body>
@@ -206,7 +217,7 @@
                             </div>
                             <div class="ms-4">
                                 <h4>Call Us Direct</h4>
-                                <a href="tel:+917383181131" class="mb-0 h5 text-decoration-none text-dark fw-bold">+91 7383181131</a>
+                                <a href="tel:+918160945573" class="mb-0 h5 text-decoration-none text-dark fw-bold">+91 8160945573</a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4">
@@ -215,7 +226,7 @@
                             </div>
                             <div class="ms-4">
                                 <h4>Email Us For Inquiries</h4>
-                                <a class="mb-0 h5 text-decoration-none text-primary" href="mailto:hello@dreamclone.in">hello@dreamclone.in</a>
+                                <a class="mb-0 h5 text-decoration-none text-primary" href="mailto:dreamclone2501@gmail.com">dreamclone2501@gmail.com</a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -225,10 +236,10 @@
                                 </div>
                             </div>
                             <div class="d-flex">
-                                <a class="btn btn-lg-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-lg-square btn-primary rounded-circle me-2" href="/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="/"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="https://www.instagram.com/dreamclone_softech?igsh=MXZkMjU0Nnp5a25kYQ==&utm_source=ig_contact_invite"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href="/"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -251,7 +262,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item d-flex flex-column">
                             {{-- <h4 class="text-dark mb-4"></h4> --}}
-                            <img src="assets/img/logo-footer.png" alt="">
+                            <img src="assets/img/logo-footer.png" alt="dreamclone" title="dreamclone">
                             {{-- <a href=""> Why Dreamclone?</a> --}}
                             <p style="line-height: 20px; font-size: 14px;">
                                 Scale your business with Dreamclone. We build custom Advanced solutions, high-performance web systems, and seamless AI-driven workflow automation.
@@ -271,7 +282,6 @@
                             <h4 class="mb-4 text-dark">Quick Links</h4>
                             <a href="javascript:void(0);"> Career</a>
                             <a href="javascript:void(0);"> Terms & Condition</a>
-                            <a href="javascript:void(0);"> Contact Us</a>
                         </div>
                     </div>
                     {{-- <div class="col-md-6 col-lg-6 col-xl-3">
@@ -288,14 +298,14 @@
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-dark">Contact Info</h4>
                             <a href=""><i class="fa fa-map-marker-alt me-2"></i> Sundaram Icon, Vaikunth crossing, Waghodia road, Vadodara, 390019</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@dreamclone.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +91 7383181131</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> dreamclone2501@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +91 8160945573</a>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-secondary me-2"></i>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="/"><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://www.instagram.com/dreamclone_softech?igsh=MXZkMjU0Nnp5a25kYQ==&utm_source=ig_contact_invite"><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href="/"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
