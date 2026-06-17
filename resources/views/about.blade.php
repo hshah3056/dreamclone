@@ -17,6 +17,7 @@
         <meta name="publisher" content="https://www.dreamclone.com">
         <meta name="robots" content="index, follow">
 
+
         <!-- Open Graph / LinkedIn / Facebook -->
         <meta property="og:type" content="{{ $type }}">
         <meta property="og:url" content="{{ $url }}">
@@ -32,8 +33,9 @@
         <meta name="twitter:description" content="{{ $description }}">
         <meta name="twitter:image" content="{{ $image }}">
         <meta name="theme-color" content="#ffffff">
+        <meta name="apple-mobile-web-app-title" content="Dreamclone">
 
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="public/favicon.ico">
         <link rel="icon" type="image/x-icon" href="assets/img/favicon/logo-16x16.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/logo-16x16.png">
 
@@ -41,8 +43,10 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/logo-32x32.png">
 
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/logo-180x180.png">
-        <meta name="apple-mobile-web-app-title" content="Dreamclone">
 
+        <!-- Android / Google Chrome Home Screen Web App Icons -->
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets/img/favicon/logo-192x192.png') }}">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets/img/favicon/logo-192x192.png') }}">
         <link rel="canonical" href="{{ $url }}">
 
         <!-- Google Web Fonts -->
