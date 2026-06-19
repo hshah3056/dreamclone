@@ -62,7 +62,7 @@
         <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
             <div class="container">
-                <div class="row g-4 align-items-center">
+                <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
                         <span class="text-white">
                             Copyright © {{ date("Y") }} <a href="/"> Dreamclone </a>, All right reserved.</span>

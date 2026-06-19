@@ -65,7 +65,7 @@
         <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
-        <div itemscope itemtype="https://schema.org/Organization" style="display:none;">
+        {{-- <div itemscope itemtype="https://schema.org/Organization" style="display:none;">
             <link itemprop="url" href="https://www.dreamclone.in">
             <link itemprop="logo" href="{{ asset('assets/img/favicon/logo-180x180.png') }}">
 
@@ -73,7 +73,7 @@
 
             <a itemprop="sameAs" href="https://www.facebook.com/dreamclone" target="_blank">Facebook</a> |
             <a itemprop="sameAs" href="https://www.linkedin.com/company/dreamclone" target="_blank">LinkedIn</a>
-        </div>
+        </div> --}}
 
         @yield('styles')
     </head>
@@ -96,6 +96,112 @@
     @include('template.footer')
 
     <!-- JavaScript Libraries -->
+    {{-- @verbatim --}}
+    @php
+        $dreamcloneSchema = [
+            "@context" => "https://schema.org",
+            "@graph" => [
+                [
+                    "@type" => "Organization",
+                    "@id" => "https://www.dreamclone.in/#organization",
+                    "name" => "Dreamclone Software",
+                    "alternateName" => "Dreamclone",
+                    "legalName" => "Dreamclone Software Pvt. Ltd.",
+                    "url" => "https://www.dreamclone.in",
+                    "logo" => [
+                        "@type" => "ImageObject",
+                        "url" => "https://dreamclone.in/assets/img/logo.png"
+                    ],
+                    "image" => "https://dreamclone.in/assets/img/logo.png",
+                    "description" => "Dreamclone delivers high-velocity, scalable digital architecture, custom CRM systems, and dynamic SaaS product applications.",
+                    "foundingDate" => "2026",
+                    "foundingLocation" => [
+                        "@type" => "Place",
+                        "address" => [
+                            "@type" => "PostalAddress",
+                            "addressLocality" => "Vadodara",
+                            "addressRegion" => "Gujarat",
+                            "addressCountry" => "IN"
+                        ]
+                    ],
+                    "address" => [
+                        "@type" => "PostalAddress",
+                        "streetAddress" => "Sundaram Icon, Vaikunth Crossing, Bh. Rajratna Platina, Waghodia Road",
+                        "addressLocality" => "Vadodara",
+                        "addressRegion" => "Gujarat",
+                        "postalCode" => "390019",
+                        "addressCountry" => "IN"
+                    ],
+                    "contactPoint" => [
+                        [
+                            "@type" => "ContactPoint",
+                            "contactType" => "Sales and Service",
+                            "url" => "https://www.dreamclone.in/contact/",
+                            "availableLanguage" => "en"
+                        ],
+                        [
+                            "@type" => "ContactPoint",
+                            "contactType" => "Customer Service",
+                            "url" => "https://www.dreamclone.in/service/",
+                            "availableLanguage" => "en"
+                        ]
+                    ],
+                    "telephone" => "+91-8160945573",
+                    "email" => "dreamclone2501@gmail.com",
+                    "sameAs" => [
+                        "https://www.linkedin.com/company/dreamclone/"
+                    ],
+                    "areaServed" => [
+                        [
+                            "@type" => "Country",
+                            "name" => "India"
+                        ]
+                    ],
+                    "knowsAbout" => [
+                        "Custom CRM Development",
+                        "SaaS Application Architecture",
+                        "Digital Transformation Solutions",
+                        "Scalable Cloud Software",
+                        "Business Process Automation"
+                    ],
+                    "location" => [
+                        [
+                            "@type" => "Place",
+                            "name" => "India Office",
+                            "address" => [
+                                "@type" => "PostalAddress",
+                                "streetAddress" => "Sundaram Icon, Vaikunth Crossing, Bh. Rajratna Platina",
+                                "addressLocality" => "Vadodara",
+                                "addressRegion" => "Gujarat",
+                                "postalCode" => "390019",
+                                "addressCountry" => "IN"
+                            ]
+                        ]
+                    ],
+                    "mainEntityOfPage" => [
+                        "@type" => "WebPage",
+                        "@id" => "https://www.dreamclone.in"
+                    ]
+                ],
+                [
+                    "@type" => "WebSite",
+                    "@id" => "https://www.dreamclone.in/#website",
+                    "url" => "https://www.dreamclone.in",
+                    "name" => "Dreamclone Software",
+                    "publisher" => [
+                        "@id" => "https://www.dreamclone.in/#organization"
+                    ]
+                ]
+            ]
+        ];
+    @endphp
+
+    <!-- Dreamclone Software Schema Markup -->
+    <script type="application/ld+json">
+        {!! json_encode($dreamcloneSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+    </script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
