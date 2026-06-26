@@ -104,7 +104,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                        <a href="{{ route('home') }}" class="nav-item nav-link">Home</a>
                         <a href="{{ route('web-about') }}" class="nav-item nav-link">About</a>
                         <a href="{{ route('web-service') }}" class="nav-item nav-link">Services</a>
                     </div>
@@ -279,6 +279,7 @@
                             <a href="{{ route('web-about') }}"> About Us</a>
                             <a href="{{ route('web-service') }}"> Service</a>
                             <a href="{{ route('web-contact') }}"> Contact Us</a>
+                            <a href="{{ route('campaign.show') }}"> Campaign</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-2">

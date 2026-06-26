@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use Illuminate\Http\Request;
 use Spatie\Sitemap\SitemapGenerator;
+use App\Http\Controllers\CampaignController;
 
 // Route::get('/home', function () {
 //     return view('welcome');
@@ -42,3 +43,8 @@ Route::get('/manual-sitemap-generate', function (Request $request) {
         return 'Error generating sitemap: ' . $e->getMessage();
     }
 });
+
+// Campaign Routes
+Route::get('/campaign', [CampaignController::class, 'showForm'])->name('campaign.show');
+Route::post('/campaign-send', [CampaignController::class, 'sendCampaign'])->name('campaign.send');
+Route::get('/campaign/preview', [CampaignController::class, 'previewTemplate'])->name('campaign.preview');

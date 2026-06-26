@@ -19,6 +19,7 @@
                             <a href="{{ route('web-about') }}"> About Us</a>
                             <a href="{{ route('web-service') }}"> Service</a>
                             <a href="{{ route('web-contact') }}"> Contact Us</a>
+                            <a href="{{ route('campaign.show') }}"> Campaign</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-2">
