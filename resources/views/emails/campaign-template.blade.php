@@ -92,7 +92,7 @@
                     <tr>
                         <td align="center" style="padding: 0 40px 35px 40px;">
                             <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(4, 112, 182, 0.08); border: 1px solid #e2e8f0; max-width: 480px; background-color: #f8fafc; padding: 12px;">
-                                <img src="{{asset('assets/img/ss.gif')}}" alt="Premium Custom Software Development Architecture" style="width: 100%; height: auto; display: block; border-radius: 8px;" />
+                                <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" alt="Premium Custom Software Development Architecture" style="width: 100%; height: auto; display: block; border-radius: 8px;" />
                             </div>
                         </td>
                     </tr>
