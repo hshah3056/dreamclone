@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         @props([
-            'title' => 'Custom CRM & SaaS Development Agency | Dreamclone',
-            'description' => 'Dreamclone delivers high-velocity, scalable digital architecture including custom CRM systems, dynamic SaaS products applications.',
+            'title' => 'About Dreamclone | Software Development Experts in India',
+            'description' => 'Learn about Dreamclone\'s mission to build scalable digital architecture, custom software, and innovative IT solutions for visionary businesses worldwide.',
             'url' => url()->current(),
             'image' => asset('assets/img/logo.png'),
             'type' => 'website'
